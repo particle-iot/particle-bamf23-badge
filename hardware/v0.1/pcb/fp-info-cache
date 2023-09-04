@@ -1,0 +1,225 @@
+54093828615793
+particle-bamf23-badge
+Badgelife-SAOv169-BADGE-2x3
+Through hole straight IDC box header, 2x03, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x03 2.54mm double row
+0
+6
+6
+particle-bamf23-badge
+Badgelife-SAOv169-SAO-2x3
+Through hole straight IDC box header, 2x03, 2.54mm pitch, double rows
+Through hole IDC box header THT 2x03 2.54mm double row
+0
+6
+6
+particle-bamf23-badge
+BatteryHolder_MPD_BK82_AAA
+18650 Battery Holder (http://www.memoryprotectiondevices.com/datasheets/BK-18650-PC2-datasheet.pdf)
+18650 Battery Holder
+0
+4
+2
+particle-bamf23-badge
+C_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+resistor handsolder
+0
+2
+2
+particle-bamf23-badge
+D_SMA
+Diode SMA (DO-214AC)
+Diode SMA (DO-214AC)
+0
+2
+2
+particle-bamf23-badge
+D_SOD-123
+SOD-123
+SOD-123
+0
+2
+2
+particle-bamf23-badge
+D_SOD-123HE
+
+
+0
+2
+2
+particle-bamf23-badge
+D_SOD123HE
+http://www.diodes.com/_files/datasheets/ds30497.pdf
+PowerDI diode vishay
+0
+2
+2
+particle-bamf23-badge
+Harwin_M20-7810845_2x08_P2.54mm_Vertical
+Harwin Female Vertical Surface Mount Double Row 2.54mm (0.1 inch) Pitch PCB Connector, M20-7810845, 8 Pins per row (https://cdn.harwin.com/pdfs/M20-781.pdf), generated with kicad-footprint-generator
+connector Harwin M20 side entry
+0
+16
+8
+particle-bamf23-badge
+Harwin_M20-7811245_2x12_P2.54mm_Vertical
+Harwin Female Vertical Surface Mount Double Row 2.54mm (0.1 inch) Pitch PCB Connector, M20-7811245, 12 Pins per row (https://cdn.harwin.com/pdfs/M20-781.pdf), generated with kicad-footprint-generator
+connector Harwin M20 side entry
+0
+24
+24
+particle-bamf23-badge
+JST04_1MM_RA
+
+
+0
+6
+6
+particle-bamf23-badge
+LED_D5.0mm_Horizontal_O1.27mm_Z3.0mm
+LED, diameter 5.0mm z-position of LED center 3.0mm, 2 pins
+LED diameter 5.0mm z-position of LED center 3.0mm 2 pins
+0
+2
+2
+particle-bamf23-badge
+LED_Harvatek_B4301IR
+LED, SMD, APDA3020VBC/D, https://www.kingbrightusa.com/images/catalog/SPEC/APDA3020VBC-D.pdf
+LED APDA3020VBC/D Kingbright 
+0
+3
+2
+particle-bamf23-badge
+LED_WS2812B_PLCC4_5.0x5.0mm_P3.2mm
+5.0mm x 5.0mm Addressable RGB LED NeoPixel, https://cdn-shop.adafruit.com/datasheets/WS2812B.pdf
+LED RGB NeoPixel PLCC-4 5050
+0
+4
+4
+particle-bamf23-badge
+MagneticBuzzer_FUET-9032-05
+CST-931RP-A, http://www.cui.com/product/resource/cst-931rp-a.pdf
+CST-931RP-A
+0
+2
+2
+particle-bamf23-badge
+MountingHole_4.0mm_M2.9
+Mounting Hole 3.2mm, no annular, M3
+mounting hole 3.2mm no annular m3
+0
+0
+0
+particle-bamf23-badge
+MountingHole_4.0mm_M3.0
+Mounting Hole 3.2mm, no annular, M3
+mounting hole 3.2mm no annular m3
+0
+0
+0
+particle-bamf23-badge
+PinHeader_1x02_P2.54mm_Vertical
+Through hole straight pin header, 1x02, 2.54mm pitch, single row
+Through hole pin header THT 1x02 2.54mm single row
+0
+2
+2
+particle-bamf23-badge
+PinHeader_1x03_P2.54mm_Vertical
+Through hole straight pin header, 1x03, 2.54mm pitch, single row
+Through hole pin header THT 1x03 2.54mm single row
+0
+3
+3
+particle-bamf23-badge
+PinHeader_2x02_P2.54mm_Vertical
+Through hole straight pin header, 2x02, 2.54mm pitch, double rows
+Through hole pin header THT 2x02 2.54mm double row
+0
+4
+4
+particle-bamf23-badge
+R_0805_2012Metric_Pad1.20x1.40mm_HandSolder
+Resistor SMD 0805 (2012 Metric), square (rectangular) end terminal, IPC_7351 nominal with elongated pad for handsoldering. (Body size source: IPC-SM-782 page 72, https://www.pcb-3d.com/wordpress/wp-content/uploads/ipc-sm-782a_amendment_1_and_2.pdf), generated with kicad-footprint-generator
+resistor handsolder
+0
+2
+2
+particle-bamf23-badge
+SOT-23-5_HandSoldering
+5-pin SOT23 package
+SOT-23-5 hand-soldering
+0
+5
+5
+particle-bamf23-badge
+SOT-23_HandSoldering
+5-pin SOT23 package
+SOT-23-5 hand-soldering
+0
+3
+3
+particle-bamf23-badge
+SW_Push_1P1T_NO_6x6mm_H5mm
+tactile push button, 6x6mm e.g. PTS645xx series, height=9.5mm
+tact sw push 6mm smd
+0
+4
+2
+particle-bamf23-badge
+SW_SPDT_PCM12
+Ultraminiature Surface Mount Slide Switch, right-angle, https://www.ckswitches.com/media/1424/pcm.pdf
+
+0
+7
+3
+particle-bamf23-badge
+Sensirion_DFN-8-1EP_2.5x2.5mm_P0.5mm_EP1.1x1.7mm
+Sensirion DFN-8 SHT3x-DIS (https://www.sensirion.com/fileadmin/user_upload/customers/sensirion/Dokumente/2_Humidity_Sensors/Datasheets/Sensirion_Humidity_Sensors_SHT3x_Datasheet_digital.pdf)
+sensirion dfn nolead
+0
+10
+9
+particle-bamf23-badge
+Vishay_MINICAST-3Pin
+IR Receiver Vishay TSOP-xxxx, MINICAST package, see https://www.vishay.com/docs/82669/tsop32s40f.pdf
+IR Receiver Vishay TSOP-xxxx MINICAST
+0
+3
+3
+particle-bamf23-badge
+music-notes
+
+
+0
+0
+0
+particle-bamf23-badge
+particle-logo-38mm-ss
+
+
+0
+0
+0
+particle-bamf23-badge
+particle-logo-stacked-10mm-sm
+
+
+0
+0
+0
+particle-bamf23-badge
+temp-humidity-7.6mm-sm
+
+
+0
+0
+0
+particle-bamf23-badge
+water-balloon-5mm-ss
+
+
+0
+0
+0

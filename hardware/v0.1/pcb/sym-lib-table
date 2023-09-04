@@ -1,0 +1,7 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "particle-bamf23-badge")(type "KiCad")(uri "${KIPRJMOD}/libs/particle-bamf23-badge-sch-symbols/particle-bamf23-badge.kicad_sym")(options "")(descr ""))
+  (lib (name "particle-logo1")(type "KiCad")(uri "${KIPRJMOD}/libs/particle-bamf23-badge-sch-symbols/particle-logo-38mm-ss.kicad_sym")(options "")(descr ""))
+  (lib (name "particle-logo2")(type "KiCad")(uri "${KIPRJMOD}/libs/particle-bamf23-badge-sch-symbols/particle-logo.kicad_sym")(options "")(descr ""))
+  (lib (name "sparkfun")(type "KiCad")(uri "${KIPRJMOD}/libs/particle-bamf23-badge-sch-symbols/SparkFun-Connector.kicad_sym")(options "")(descr ""))
+)
