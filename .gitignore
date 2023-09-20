@@ -1,2 +1,4 @@
 hardware/v0.1/pcb/particle-bamf23-badge-backups/*
+hardware/v1.0/pcb/particle-bamf23-badge-backups/*
+node_modules
 .DS_Store
