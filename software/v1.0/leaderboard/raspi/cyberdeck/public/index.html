@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Particle Cyberdeck</title>
+    <style>
+        @font-face {
+            font-family: 'Industria Solid';
+            src: url('Industria Solid.otf');
+        }
+
+        body {
+            background-image: url('hackers.png');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            margin: 0; /* Remove default margin */
+            padding: 0; /* Remove default padding */
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end; /* Vertically align content at the bottom */
+            height: 100vh; /* Set the body to occupy the full viewport height */
+        }
+
+        #content {
+            background-color: rgba(255, 255, 255, 0.0);
+            padding: 20px;
+            margin: auto; /* Center the content horizontally */
+            width: 80%; /* Set the width of the content */
+        }
+
+        #text1 {
+            width: 90%;
+            height: 90px;
+            resize: none;
+            font-family: 'Industria Solid', sans-serif;
+            font-size: 58pt; /* Set the font size to 200pt */
+            font-weight: bold; /* Make the font bold */
+            color: #458251; /* Set the font color to green */
+            letter-spacing: 7px;
+            background: transparent; /* Remove the background */
+            text-transform: uppercase;
+            border: none; /* Remove the border */
+            position: absolute;
+            bottom: 390px;
+            left: 37px;
+            outline: none;
+            overflow-y: auto;
+            overflow: hidden;
+            scrollbar-width: none; /* Hide scrollbar in Firefox */
+            -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer */
+        }
+
+        #text2 {
+            width: 90%;
+            height: 90px;
+            resize: none;
+            font-family: 'Industria Solid', sans-serif;
+            font-size: 58pt; /* Set the font size to 200pt */
+            font-weight: bold; /* Make the font bold */
+            color: #458251; /* Set the font color to green */
+            letter-spacing: 7px;
+            background: transparent; /* Remove the background */
+            text-transform: uppercase;
+            border: none; /* Remove the border */
+            position: absolute;
+            bottom: 300px;
+            left: 37px;
+            outline: none;
+            overflow-y: auto;
+            overflow: hidden;
+            scrollbar-width: none; /* Hide scrollbar in Firefox */
+            -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer */
+        }
+
+        #text3 {
+            width: 90%;
+            height: 90px;
+            resize: none;
+            font-family: 'Industria Solid', sans-serif;
+            font-size: 58pt; /* Set the font size to 200pt */
+            font-weight: bold; /* Make the font bold */
+            color: #458251; /* Set the font color to green */
+            letter-spacing: 7px;
+            background: transparent; /* Remove the background */
+            text-transform: uppercase;
+            border: none; /* Remove the border */
+            position: absolute;
+            bottom: 210px;
+            left: 37px;
+            outline: none;
+            overflow-y: auto;
+            overflow: hidden;
+            scrollbar-width: none; /* Hide scrollbar in Firefox */
+            -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer */
+        }
+
+        #text4 {
+            width: 90%;
+            height: 90px;
+            resize: none;
+            font-family: 'Industria Solid', sans-serif;
+            font-size: 58pt; /* Set the font size to 200pt */
+            font-weight: bold; /* Make the font bold */
+            color: #458251; /* Set the font color to green */
+            letter-spacing: 7px;
+            background: transparent; /* Remove the background */
+            text-transform: uppercase;
+            border: none; /* Remove the border */
+            position: absolute;
+            bottom: 120px;
+            left: 37px;
+            outline: none;
+            overflow-y: auto;
+            overflow: hidden;
+            scrollbar-width: none; /* Hide scrollbar in Firefox */
+            -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer */
+        }
+
+        #text5 {
+            width: 90%;
+            height: 90px;
+            resize: none;
+            font-family: 'Industria Solid', sans-serif;
+            font-size: 58pt; /* Set the font size to 200pt */
+            font-weight: bold; /* Make the font bold */
+            color: #458251; /* Set the font color to green */
+            letter-spacing: 7px;
+            background: transparent; /* Remove the background */
+            text-transform: uppercase;
+            border: none; /* Remove the border */
+            position: absolute;
+            bottom: 30px;
+            left: 37px;
+            outline: none;
+            overflow-y: auto;
+            overflow: hidden;
+            scrollbar-width: none; /* Hide scrollbar in Firefox */
+            -ms-overflow-style: none; /* Hide scrollbar in Internet Explorer */
+        }
+
+        #close-button {
+            position: absolute;
+            top: 10px;
+            right: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="content">
+        <textarea id="text1" cols="22" rows="1" wrap="hard" maxlength="22" readonly tabindex="-1"></textarea>
+        <textarea id="text2" cols="22" rows="1" wrap="hard" maxlength="22" readonly></textarea>
+        <textarea id="text3" cols="22" rows="1" wrap="hard" maxlength="22" readonly tabindex="-1"><<< THROW BALLOON!</textarea>
+        <textarea id="text4" cols="22" rows="1" wrap="hard" maxlength="22" readonly tabindex="-1"></textarea>
+        <textarea id="text5" cols="22" rows="1" wrap="hard" maxlength="22" readonly tabindex="-1"></textarea>
+    </div>
+    <script src="http://localhost:3000/socket.io/socket.io.js"></script>
+    <script>
+        const text1 = document.getElementById('text1');
+        const text2 = document.getElementById('text2');
+        const text3 = document.getElementById('text3');
+        const text4 = document.getElementById('text4');
+        const text5 = document.getElementById('text5');
+        let jsonData;
+        text2.focus(); // Set focus on the textarea by default
+
+        var socket = io.connect('http://localhost:3000');
+
+        socket.on('text1', (data) => {
+            text1.value = data;
+            if (text1.value == "ENTER YOUR NICKNAME:") {
+                text2.readOnly = false;
+                text2.focus(); // Set focus on the textarea by default
+            }
+            if (text1.value.startsWith("WELCOME")) {
+                text2.style.color = '#458251'; // make sure name field is default GREEN now
+                text3.focus();
+            }
+        });
+        socket.on('text2', (data) => {
+            text2.value = data;
+        });
+        socket.on('text3', (data) => {
+            text3.value = data;
+            if (text3.value == "<<< THROW BALLOON!") {
+                text2.readOnly = true;
+                text3.focus();
+            }
+        });
+        socket.on('text4', (data) => {
+            text4.value = data;
+            if (text4.value == "NAME TAKEN, TRY AGAIN") {
+                text2.style.color = '#660000'; // make entereed name RED
+                text2.focus(); // Set focus on the textarea by default
+            }
+        });
+        socket.on('text5', (data) => {
+            text5.value = data;
+        });
+        socket.on('json-data', (data) => {
+            console.log("json-data", JSON.parse(data));
+            jsonData = JSON.parse(data);
+        });
+
+        document.addEventListener("keyup", function(event) {
+            if (event.keyCode === 13 && text1.value == "ENTER YOUR NICKNAME:") {
+                enteredName = text2.value.trim().toUpperCase();
+                text2.value = enteredName;
+                if (enteredName != "" && enteredName != "NICKNAME") {
+                    jsonData.cyberdeck_game_name = enteredName;
+                    socket.emit('name-entered', JSON.stringify(jsonData));
+                } else {
+                    text2.value = "NICKNAME";
+                }
+            } else if (event.keyCode === 27) {
+                socket.emit('esc-key', 'escape!');
+            }
+        });
+
+    </script>
+</body>
+</html>
