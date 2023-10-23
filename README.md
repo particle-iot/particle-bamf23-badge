@@ -94,6 +94,7 @@ To run the cyberdeck software on a Raspberry Pi-400:
 - copy the cyberdeck folder to your raspberry pi
 - ensure node.js is installed ( https://pimylifeup.com/raspberry-pi-nodejs (other seemingly simpler ways didn't work!) )
 - ensure electron is installed globally `npm i -g electron`
+- run `npm install` the first time to populate all of the libraries
 - in one terminal tab run `electron electron.js`
 - in another terminal tab run `node server.js`
 - Note: this will likely crash without the leaderboard server running as well, accepting score requests.  I'm leaving that part as an excercise for you.  You can use an express app to accomplish this, with some effort :D  Your leaderboard server should use a local MongoDB so you can restart it from time to time without losing the scores and user nicknames collected.  I ended up implementing separate collections for users and game/score data.
