@@ -46,6 +46,12 @@ software/v1.0/badge-interface-build (badge-interface build directory)
 software/v1.0/leaderboard (cyberdeck software)
 ```
 
+### Compile prerequisites
+
+- Install [Particle CLI](https://docs.particle.io/getting-started/developer-tools/cli/)
+- Login to the CLI with your Particle account `particle login`
+- Install [Device OS Flash Util](https://github.com/particle-iot/device-os-flash-util)
+
 ### Badge
 
 To build the badge firmware, connect a badge over USB and run:
